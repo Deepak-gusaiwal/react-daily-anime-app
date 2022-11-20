@@ -12,11 +12,15 @@ export const ColorModeSwitcher = props => {
       size="md"
       fontSize="lg"
       aria-label={`Switch to ${text} mode`}
-      variant="ghost"
+      variant="solid"
       color="current"
-      marginLeft="2"
+      position="fixed"
+      top="2"
+      right="2"
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
+      border="2px solid"
+      colorScheme="whatsapp"
       {...props}
     />
   );
